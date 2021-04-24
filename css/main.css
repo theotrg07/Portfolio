@@ -675,7 +675,7 @@ a {
     font-size: 0.6em;
   }
 
-  .opendev-website p {
+  .opendev-website .p-and-image p {
     margin: 1em;
     font-size: 0.7em;
   }
@@ -698,13 +698,14 @@ a {
     padding: 1em;
   }
 
-  .discord-bot p {
+  .discord-bot .p-and-image p {
     margin: 1.3em;
     font-size: 0.7em;
   }
 
   #discord-bot-img {
     border-radius: 8px;
+    width:75%;
   }
 
   .guess-the-number-game {
@@ -717,13 +718,14 @@ a {
     padding: 1em;
   }
 
-  .guess-the-number-game p {
+  .guess-the-number-game .p-and-image p {
     margin: 1.3em;
     font-size: 0.7em;
   }
 
   .guess-the-number-game-img {
     border-radius: 8px;
+    width:80%;
   }
 
   /* ========================END OF PROJECTS PAGE======================= */
