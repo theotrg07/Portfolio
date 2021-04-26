@@ -114,7 +114,7 @@ a {
     color: var(--orange);
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 0 0.8em;
+    padding: 0 0.7em;
   }
 
   #introduce-sentence {
@@ -473,12 +473,13 @@ a {
   }
 
   li {
+    font-size: 0.8em;
     display: block;
-    padding: 0 0.5em;
+    padding: 0.2em 0.6em 0 0.6em;
   }
 
   li:hover {
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
   }
 
   .logo-name {
@@ -823,14 +824,14 @@ a {
   }
 
   li:hover {
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
   }
 
   .logo-name {
     color: var(--orange);
     font-size: 0.4rem;
     font-weight: bold;
-    padding: 2.5% 0 0 5%;
+    padding: 2.5% 0 4% 5%;
   }
 
   .navbar-elem {
@@ -1113,7 +1114,7 @@ a {
     display: flex;
     justify-content: center;
     padding: 0.5em;
-    font-size: 0.9em;
+    font-size: 0.7em;
     color: var(--black);
   }
   .socials {
