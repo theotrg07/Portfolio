@@ -41,7 +41,7 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
 .figma-shape {
@@ -49,28 +49,23 @@ a {
   width: 370px;
   height: 400px;
 }
-@media screen and (min-width:950px) {
-    
-    .opendev-website .p-and-image p{
-        font-size:1.4em;
-        line-height: 1.6em;
-    }
+@media screen and (min-width: 950px) {
+  .opendev-website .p-and-image p {
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
 
-    .discord-bot .p-and-image p{
-        font-size:1.4em;
-        line-height: 1.6em;
-        position: relative;
-        top:20px;
-    }
+  .discord-bot .p-and-image p {
+    font-size: 1.4em;
+    line-height: 1.6em;
+    position: relative;
+    top: 20px;
+  }
 
-    .guess-the-number-game .p-and-image p{
-        font-size:1.4em;
-        line-height:1.6em;
-    }
-
-
-
-
+  .guess-the-number-game .p-and-image p {
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
 }
 /* ================COMPUTER SIZE=============== */
 /* =====================HOME PAGE============== */
@@ -106,12 +101,13 @@ a {
   }
 
   li {
+    font-size: 1.2em;
     display: block;
     padding: 0 1.5em;
   }
 
-  li:hover{
-      border-bottom: 3px solid var(--orange);
+  li:hover {
+    border-bottom: 2px solid var(--orange);
   }
 
   .logo-name {
@@ -120,7 +116,6 @@ a {
     font-weight: bold;
     padding: 0 0.8em;
   }
-
 
   #introduce-sentence {
     padding: 3em 0 0 6em;
@@ -308,16 +303,16 @@ a {
 
   .opendev-website {
     background-color: var(--light_grey);
-    margin:1.6em;
+    margin: 1.6em;
     text-align: left;
     border-radius: 8px;
     padding: 1em;
   }
-  .p-and-image{
-      display:flex;
-      align-items:flex-start;
-      padding:2em;
-      padding-right:0;
+  .p-and-image {
+    display: flex;
+    align-items: flex-start;
+    padding: 2em;
+    padding-right: 0;
   }
   .project-title {
     color: var(--orange);
@@ -326,15 +321,11 @@ a {
     font-size: 1.2em;
   }
 
-
-
   .opendev-img {
     border-radius: 8px;
-    width:50%;
+    width: 50%;
     position: relative;
-    margin:1em;
-    
-    
+    margin: 1em;
   }
 
   #opendev-link {
@@ -343,7 +334,7 @@ a {
 
   .discord-bot {
     background-color: var(--light_grey);
-    margin:1.6em;
+    margin: 1.6em;
     text-align: left;
     border-radius: 8px;
     padding: 1em;
@@ -351,19 +342,19 @@ a {
 
   .discord-bot .p-and-image p {
     margin: 1em;
-    margin-top:0;
+    margin-top: 0;
   }
 
   #discord-bot-img {
-    position:relative;
-    width:55%;
-    margin:1em;
-    border-radius:8px;
+    position: relative;
+    width: 55%;
+    margin: 1em;
+    border-radius: 8px;
   }
 
   .guess-the-number-game {
     background-color: var(--light_grey);
-    margin:1.6em;
+    margin: 1.6em;
     text-align: left;
     border-radius: 8px;
     padding: 1em;
@@ -371,17 +362,16 @@ a {
 
   .guess-the-number-game .p-and-image p {
     margin: 1em;
-    margin-top:0;
-
+    margin-top: 0;
   }
 
   .guess-the-number-game-img {
-    position:relative;
-    width:55%;
     position: relative;
-    margin:1em;
-    border-radius:8px;
-    margin-top:0;
+    width: 55%;
+    position: relative;
+    margin: 1em;
+    border-radius: 8px;
+    margin-top: 0;
   }
 
   /* ========================END OF PROJECTS PAGE======================= */
@@ -487,9 +477,9 @@ a {
     padding: 0 0.5em;
   }
 
-  li:hover{
+  li:hover {
     border-bottom: 3px solid var(--orange);
-}
+  }
 
   .logo-name {
     color: var(--orange);
@@ -705,7 +695,7 @@ a {
 
   #discord-bot-img {
     border-radius: 8px;
-    width:75%;
+    width: 75%;
   }
 
   .guess-the-number-game {
@@ -725,7 +715,7 @@ a {
 
   .guess-the-number-game-img {
     border-radius: 8px;
-    width:80%;
+    width: 80%;
   }
 
   /* ========================END OF PROJECTS PAGE======================= */
@@ -832,9 +822,9 @@ a {
     display: block;
   }
 
-  li:hover{
+  li:hover {
     border-bottom: 3px solid var(--orange);
-}
+  }
 
   .logo-name {
     color: var(--orange);
@@ -842,8 +832,6 @@ a {
     font-weight: bold;
     padding: 2.5% 0 0 5%;
   }
-
-
 
   .navbar-elem {
     position: relative;
