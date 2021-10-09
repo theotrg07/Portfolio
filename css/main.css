@@ -55,14 +55,14 @@ a {
     line-height: 1.6em;
   }
 
-  .discord-bot .p-and-image p {
+  .weather-app .p-and-image p {
     font-size: 1.4em;
     line-height: 1.6em;
     position: relative;
     top: 20px;
   }
 
-  .guess-the-number-game .p-and-image p {
+  .todo-app .p-and-image p {
     font-size: 1.4em;
     line-height: 1.6em;
   }
@@ -332,7 +332,7 @@ a {
     color: var(--orange);
   }
 
-  .discord-bot {
+  .weather-app {
     background-color: var(--light_grey);
     margin: 1.6em;
     text-align: left;
@@ -340,19 +340,19 @@ a {
     padding: 1em;
   }
 
-  .discord-bot .p-and-image p {
+  .weather-app .p-and-image p {
     margin: 1em;
     margin-top: 0;
   }
 
-  #discord-bot-img {
+  #weather-app-img {
     position: relative;
     width: 55%;
     margin: 1em;
     border-radius: 8px;
   }
 
-  .guess-the-number-game {
+  .todo-app {
     background-color: var(--light_grey);
     margin: 1.6em;
     text-align: left;
@@ -360,12 +360,12 @@ a {
     padding: 1em;
   }
 
-  .guess-the-number-game .p-and-image p {
+  .todo-app .p-and-image p {
     margin: 1em;
     margin-top: 0;
   }
 
-  .guess-the-number-game-img {
+  .todo-app-img {
     position: relative;
     width: 55%;
     position: relative;
@@ -679,7 +679,7 @@ a {
     color: var(--orange);
   }
 
-  .discord-bot {
+  .weather-app {
     background-color: var(--light_grey);
     margin: 1.6em;
     height: 85%;
@@ -689,17 +689,17 @@ a {
     padding: 1em;
   }
 
-  .discord-bot .p-and-image p {
+  .weather-app .p-and-image p {
     margin: 1.3em;
     font-size: 0.7em;
   }
 
-  #discord-bot-img {
+  #weather-app-img {
     border-radius: 8px;
     width: 75%;
   }
 
-  .guess-the-number-game {
+  .todo-app {
     background-color: var(--light_grey);
     margin: 1.6em;
     height: 85%;
@@ -709,14 +709,15 @@ a {
     padding: 1em;
   }
 
-  .guess-the-number-game .p-and-image p {
+  .todo-app .p-and-image p {
     margin: 1.3em;
     font-size: 0.7em;
   }
 
-  .guess-the-number-game-img {
+  .todo-app-img {
     border-radius: 8px;
     width: 80%;
+    
   }
 
   /* ========================END OF PROJECTS PAGE======================= */
@@ -1025,7 +1026,7 @@ a {
     color: var(--orange);
   }
 
-  .discord-bot {
+  .weather-app {
     background-color: var(--light_grey);
     margin: 1.6em;
     height: 50%;
@@ -1035,17 +1036,17 @@ a {
     padding: 1em;
   }
 
-  .discord-bot p {
+  .weather-app p {
     margin: 1.3em;
     font-size: 0.4em;
     text-align: left;
   }
 
-  #discord-bot-img {
+  #weather-app-img {
     border-radius: 8px;
   }
 
-  .guess-the-number-game {
+  .todo-app {
     background-color: var(--light_grey);
     margin: 1.6em;
     height: 50%;
@@ -1055,13 +1056,13 @@ a {
     padding: 0.5em;
   }
 
-  .guess-the-number-game p {
+  .todo-app p {
     margin: 1.3em;
     font-size: 0.4em;
     text-align: left;
   }
 
-  .guess-the-number-game-img {
+  .todo-app-img {
     border-radius: 8px;
   }
 
