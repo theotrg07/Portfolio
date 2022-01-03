@@ -87,16 +87,19 @@ a {
     .opendev-website .p-and-image p {
         font-size: 1.4em;
         line-height: 1.6em;
+        color: white;
     }
     .weather-app .p-and-image p {
         font-size: 1.4em;
         line-height: 1.6em;
         position: relative;
         top: 20px;
+        color: white;
     }
     .todo-app .p-and-image p {
         font-size: 1.4em;
         line-height: 1.6em;
+        color: white;
     }
 }
 
@@ -648,6 +651,7 @@ a {
     .opendev-website .p-and-image p {
         margin: 1em;
         font-size: 0.7em;
+        color: white;
     }
     .opendev-img {
         border-radius: 8px;
@@ -667,6 +671,7 @@ a {
     .weather-app .p-and-image p {
         margin: 1.3em;
         font-size: 0.7em;
+        color: white;
     }
     #weather-app-img {
         border-radius: 8px;
@@ -684,6 +689,7 @@ a {
     .todo-app .p-and-image p {
         margin: 1.3em;
         font-size: 0.7em;
+        color: white;
     }
     .todo-app-img {
         border-radius: 8px;
