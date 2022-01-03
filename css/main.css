@@ -79,6 +79,23 @@ a {
     animation: fadeInRight 2s ease 3.3s forwards;
 }
 
+.navbar-elem a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: var(--green);
+    position: absolute;
+    top: 1.6em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+}
+
+.navbar-elem a:hover:after {
+    transform: scale(1, 1);
+}
+
 .welcome h6 {
     font-style: italic;
 }
@@ -139,10 +156,11 @@ a {
         font-size: 1.2em;
         display: block;
         padding: 0 1.5em;
+        position: relative;
     }
-    li:hover {
+    /* li:hover {
         border-bottom: 2px solid var(--green);
-    }
+    } */
     .logo-name {
         color: var(--green);
         font-size: 1.3rem;
@@ -479,10 +497,11 @@ a {
         font-size: 0.8em;
         display: block;
         padding: 0.2em 0.6em 0 0.6em;
+        position: relative;
     }
-    li:hover {
+    /* li:hover {
         border-bottom: 2px solid var(--green);
-    }
+    } */
     .logo-name {
         color: var(--green);
         font-size: 1rem;
@@ -550,6 +569,7 @@ a {
         margin: 1.6em;
         height: 85%;
         border-radius: 8px;
+        padding: 1em;
     }
     .html-css-js {
         position: relative;
@@ -567,6 +587,7 @@ a {
         position: relative;
         background-color: var(--light_black);
         display: block;
+        padding: 1em;
         margin: 1.6em;
         height: 85%;
         border-radius: 8px;
@@ -787,10 +808,11 @@ a {
     }
     li {
         display: block;
+        position: relative;
     }
-    li:hover {
+    /* li:hover {
         border-bottom: 1px solid var(--green);
-    }
+    } */
     .logo-name {
         color: var(--green);
         font-size: 0.4rem;
