@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 :root {
     --orange: #c06014;
+    --green: #05cf6a;
     --black: #000000;
+    --light_black: #272727;
     --grey: #424642;
     --light_grey: #aeaeae;
     --dark-red: #ba5536;
     --white: #f3f4ed;
+    --typewriterSpeed: 3s;
+    --typewriterCharacters: 12;
 }
 
 HTML {
@@ -13,7 +17,7 @@ HTML {
 }
 
 ::selection {
-    background: var(--orange);
+    background: var(--green);
     color: var(--grey);
 }
 
@@ -31,7 +35,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--orange);
+    background-color: var(--green);
     border-radius: 20px;
 }
 
@@ -48,13 +52,35 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--green);
 }
 
 .figma-shape {
     display: none;
     width: 370px;
     height: 400px;
+    opacity: 0;
+    transform: translateX(3rem);
+    animation: fadeInLeft 2s ease 3.3s forwards
+}
+
+.greetings {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    font-size: 1.9rem;
+    opacity: 0;
+    transform: translateX(-3rem);
+    animation: fadeInRight 2s ease 3.3s forwards;
+}
+
+.welcome h6 {
+    font-style: italic;
 }
 
 @media screen and (min-width: 950px) {
@@ -86,13 +112,13 @@ a {
         text-align: left;
     }
     .nav-container {
-        background-color: var(--grey);
+        background-color: var(--light_black);
         display: grid;
         grid-template: 72% auto;
         background: unset;
     }
     .nav-container header {
-        background-color: var(--grey);
+        background-color: var(--black);
     }
     header {
         display: flex;
@@ -112,27 +138,33 @@ a {
         padding: 0 1.5em;
     }
     li:hover {
-        border-bottom: 2px solid var(--orange);
+        border-bottom: 2px solid var(--green);
     }
     .logo-name {
-        color: var(--orange);
+        color: var(--green);
         font-size: 1.3rem;
         font-weight: bold;
         padding: 0 0.7em;
     }
     #introduce-sentence {
         padding: 3em 0 0 6em;
-        color: var(--grey);
+        color: var(--light_black);
         font-size: 1.8em;
         display: flex;
         justify-content: left;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease 1s forwards
     }
     #name {
         padding: 0 0 7em 6em;
-        color: var(--orange);
+        color: var(--green);
         font-size: 1.8em;
         display: flex;
         justify-content: left;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease 2s forwards;
     }
     .figma-shape {
         position: relative;
@@ -153,6 +185,9 @@ a {
         width: 50px;
         height: 50px;
         padding: 1.2em;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease 4s forwards;
     }
     .box-container {
         position: relative;
@@ -181,7 +216,7 @@ a {
     #box-5,
     #box-7,
     #box-9 {
-        background-color: var(--orange);
+        background-color: var(--green);
     }
     /* ===================END OF HOME PAGE============== */
     /*==================== SKILLS PAGE =================*/
@@ -192,7 +227,7 @@ a {
         display: flex;
     }
     .frontend {
-        background-color: var(--orange);
+        background-color: var(--green);
         border-radius: 8px;
         padding: 2em;
         display: block;
@@ -210,7 +245,7 @@ a {
         line-height: 30px;
     }
     .python-dev {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         border-radius: 8px;
         padding: 2em;
         display: block;
@@ -227,9 +262,10 @@ a {
         font-size: 1.4em;
         margin-top: 2em;
         line-height: 30px;
+        color: #03d36b;
     }
     .collaborate {
-        background-color: var(--orange);
+        background-color: var(--green);
         border-radius: 8px;
         padding: 1.5em;
         display: block;
@@ -258,13 +294,14 @@ a {
     }
     .section-header {
         position: relative;
-        background-color: var(--dark-red);
+        background-color: var(--light_black);
         text-align: center;
         border-radius: 8px;
         margin-right: 20em;
         margin-left: 20em;
         padding: 0.8em;
         font-size: 0.8em;
+        color: var(--green);
     }
     #some-projects::before {
         content: " ";
@@ -280,7 +317,7 @@ a {
         margin-top: -1.5em;
     }
     .opendev-website {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         margin: 1.6em;
         text-align: left;
         border-radius: 8px;
@@ -291,9 +328,10 @@ a {
         align-items: flex-start;
         padding: 2em;
         padding-right: 0;
+        color: white;
     }
     .project-title {
-        color: var(--orange);
+        color: var(--green);
         text-align: center;
         margin: 1em;
         font-size: 1.2em;
@@ -305,10 +343,10 @@ a {
         margin: 1em;
     }
     #opendev-link {
-        color: var(--orange);
+        color: var(--green);
     }
     .weather-app {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         margin: 1.6em;
         text-align: left;
         border-radius: 8px;
@@ -325,7 +363,7 @@ a {
         border-radius: 8px;
     }
     .todo-app {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         margin: 1.6em;
         text-align: left;
         border-radius: 8px;
@@ -366,14 +404,14 @@ a {
         display: flex;
         justify-content: center;
         padding: 1em;
-        background-color: var(--light_grey);
-        border: 2px solid var(--orange);
+        background-color: var(--light_black);
+        border: 2px solid var(--green);
         border-radius: 8px;
         width: 25%;
         left: 30%;
     }
     .work-together-btn h4 a {
-        color: var(--black);
+        color: white;
     }
     .work-together-btn:hover {
         border: 2px solid var(--black);
@@ -396,6 +434,8 @@ a {
     }
     .copyright {
         padding-top: 2em;
+        color: var(--green);
+        font-weight: lighter;
     }
 }
 
@@ -409,13 +449,16 @@ a {
     .figma-shape {
         display: none;
     }
+    .welcome {
+        display: none;
+    }
     .home-page {
         background: var(--white);
         display: grid;
         text-align: center;
     }
     .nav-container {
-        background-color: var(--grey);
+        background-color: var(--light_black);
     }
     header {
         display: flex;
@@ -435,10 +478,10 @@ a {
         padding: 0.2em 0.6em 0 0.6em;
     }
     li:hover {
-        border-bottom: 2px solid var(--orange);
+        border-bottom: 2px solid var(--green);
     }
     .logo-name {
-        color: var(--orange);
+        color: var(--green);
         font-size: 1rem;
         font-weight: bold;
         padding: 0 0.8em;
@@ -453,15 +496,21 @@ a {
     }
     #introduce-sentence {
         padding-top: 1em;
-        color: var(--grey);
+        color: var(--light_black);
         display: flex;
         justify-content: center;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease 1s forwards
     }
     #name {
         padding-bottom: 3em;
-        color: var(--orange);
+        color: var(--green);
         display: flex;
         justify-content: center;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease 3s forwards
     }
     .box-container {
         justify-content: center;
@@ -484,7 +533,7 @@ a {
     #box-5,
     #box-7,
     #box-9 {
-        background-color: var(--orange);
+        background-color: var(--green);
     }
     /* ===================END OF HOME PAGE============== */
     /*==================== SKILLS PAGE =================*/
@@ -493,7 +542,7 @@ a {
         padding: 2em;
     }
     .frontend {
-        background-color: var(--orange);
+        background-color: var(--green);
         display: block;
         margin: 1.6em;
         height: 85%;
@@ -513,7 +562,7 @@ a {
     }
     .python-dev {
         position: relative;
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         display: block;
         margin: 1.6em;
         height: 85%;
@@ -530,10 +579,11 @@ a {
         position: relative;
         left: 1%;
         text-align: center;
+        color: #03d36b;
     }
     .collaborate {
         position: relative;
-        background-color: var(--orange);
+        background-color: var(--green);
         display: block;
         margin: 1.6em;
         height: 85%;
@@ -559,7 +609,8 @@ a {
     }
     .section-header {
         position: relative;
-        background-color: var(--dark-red);
+        background-color: var(--light_black);
+        color: var(--green);
         text-align: center;
         border-radius: 8px;
         margin-right: 2em;
@@ -581,7 +632,7 @@ a {
         margin-top: -1.5em;
     }
     .opendev-website {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         margin: 1.6em;
         height: 85%;
         text-align: left;
@@ -589,7 +640,7 @@ a {
         padding: 1em;
     }
     .project-title {
-        color: var(--orange);
+        color: var(--green);
         text-align: center;
         margin: 1em;
         font-size: 0.6em;
@@ -602,10 +653,10 @@ a {
         border-radius: 8px;
     }
     #opendev-link {
-        color: var(--orange);
+        color: var(--green);
     }
     .weather-app {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         margin: 1.6em;
         height: 85%;
         margin-top: 1.6em;
@@ -622,7 +673,7 @@ a {
         width: 75%;
     }
     .todo-app {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         margin: 1.6em;
         height: 85%;
         margin-top: 1.6em;
@@ -661,14 +712,14 @@ a {
         display: flex;
         justify-content: center;
         padding: 1em;
-        background-color: var(--light_grey);
-        border: 2px solid var(--orange);
+        background-color: var(--light_black);
+        border: 2px solid var(--green);
         border-radius: 8px;
         width: 50%;
         left: 20%;
     }
     .work-together-btn h4 a {
-        color: var(--black);
+        color: white;
     }
     .work-together-btn:hover {
         border: 2px solid var(--black);
@@ -690,6 +741,8 @@ a {
     }
     .copyright {
         padding-top: 2em;
+        color: var(--green);
+        font-weight: lighter;
     }
 }
 
@@ -701,6 +754,9 @@ a {
     .body {
         width: 100%;
     }
+    .welcome {
+        display: none;
+    }
     .home-page {
         background: var(--white);
         display: grid;
@@ -708,7 +764,7 @@ a {
         justify-content: center;
     }
     .nav-container {
-        background-color: var(--grey);
+        background-color: var(--light_black);
     }
     header {
         display: flex;
@@ -727,10 +783,10 @@ a {
         display: block;
     }
     li:hover {
-        border-bottom: 1px solid var(--orange);
+        border-bottom: 1px solid var(--green);
     }
     .logo-name {
-        color: var(--orange);
+        color: var(--green);
         font-size: 0.4rem;
         font-weight: bold;
         padding: 2.5% 0 4% 5%;
@@ -746,11 +802,17 @@ a {
     }
     #introduce-sentence {
         padding-top: 1em;
-        color: var(--grey);
+        color: var(--light_black);
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease 1s forwards
     }
     #name {
         padding-bottom: 3em;
-        color: var(--orange);
+        color: var(--green);
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease 3s forwards
     }
     .box-container {
         justify-content: center;
@@ -772,7 +834,7 @@ a {
     #box-5,
     #box-7,
     #box-9 {
-        background-color: var(--orange);
+        background-color: var(--green);
     }
     /* ===================END OF HOME PAGE============== */
     /*==================== SKILLS PAGE =================*/
@@ -781,7 +843,7 @@ a {
         padding: 2em;
     }
     .frontend {
-        background-color: var(--orange);
+        background-color: var(--green);
         display: block;
         margin: 1.6em;
         height: 85%;
@@ -803,7 +865,7 @@ a {
     }
     .python-dev {
         position: relative;
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         display: block;
         margin: 1.6em;
         height: 85%;
@@ -822,10 +884,11 @@ a {
         text-align: center;
         font-size: 0.4em;
         padding: 1em;
+        color: #03d36b;
     }
     .collaborate {
         position: relative;
-        background-color: var(--orange);
+        background-color: var(--green);
         display: block;
         margin: 1.6em;
         height: 85%;
@@ -848,7 +911,8 @@ a {
     /* ====================END OF SKILLS PAGE===================== */
     .section-header {
         position: relative;
-        background-color: var(--dark-red);
+        background-color: var(--light_black);
+        color: var(--green);
         text-align: center;
         border-radius: 8px;
         margin-right: 2em;
@@ -870,7 +934,7 @@ a {
         margin-top: -1.5em;
     }
     .opendev-website {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         margin: 1.6em;
         height: 50%;
         text-align: center;
@@ -878,7 +942,7 @@ a {
         padding: 0.5em;
     }
     .project-title {
-        color: var(--orange);
+        color: var(--green);
         text-align: center;
         margin: 0em;
         font-size: 0.4em;
@@ -896,10 +960,10 @@ a {
         border-radius: 8px;
     }
     #opendev-link {
-        color: var(--orange);
+        color: var(--green);
     }
     .weather-app {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         margin: 1.6em;
         height: 50%;
         margin-top: 1.6em;
@@ -916,7 +980,7 @@ a {
         border-radius: 8px;
     }
     .todo-app {
-        background-color: var(--light_grey);
+        background-color: var(--light_black);
         margin: 1.6em;
         height: 50%;
         margin-top: 1.6em;
@@ -949,15 +1013,15 @@ a {
         display: flex;
         justify-content: center;
         padding: 0.2em 2em 0.2em 2em;
-        background-color: var(--light_grey);
-        border: 2px solid var(--orange);
+        background-color: var(--light_black);
+        border: 2px solid var(--green);
         border-radius: 8px;
         width: 15%;
         left: 28%;
         font-size: 0.8em;
     }
     .work-together-btn h4 a {
-        color: var(--black);
+        color: white;
     }
     .work-together-btn:hover {
         border: 2px solid var(--black);
@@ -990,5 +1054,28 @@ a {
     }
     .copyright {
         font-size: 0.4em;
+        color: var(--green);
+        font-weight: lighter;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translatex(0);
     }
 }
